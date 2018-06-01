@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Sun Oct 19 05:10:02 PDT 2014
+onejar.license.required=true
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=Format-1.6.jar
+manifest.mergeall=true
+manifest.mainclass=com.bridgemms.hbasemanager.tools.Format
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=
+includes=

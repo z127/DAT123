@@ -1,0 +1,5 @@
+1、拷贝原始数据至服务器本地磁盘，并整理成/workspace/input/通道名/*.DAT文件的形式；
+2、将BridgeFormat压缩成jar包，和config.properties文件一起上传至/workspace；
+3、运行nohup java -jar jar包名 &，对原始文件进行解析，得到histPath*和statisPath*；
+4、在hadoop中执行命令将上一步生成的文件上传至HDFS；
+5、在hbase中执行importTsv命令。

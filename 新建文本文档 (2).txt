@@ -1,0 +1,58 @@
+hadoop
+hadoop3:50070/
+hadoop4:50070/
+
+hbase
+hadoop9:60010/
+
+hadoop@hadoop9:~/bigdata/hbase-1.1.5$ bin/stop-hbase.sh
+hadoop@hadoop3:~/bigdata/hadoop-2.7.2$ sbin/stop-yarn.sh
+hadoop@hadoop3:~/bigdata/hadoop-2.7.2$ sbin/stop-dfs.sh
+
+hadoop@hadoop3:~/bigdata/hadoop-2.7.2$ sbin/start-dfs.sh
+
+Starting namenodes on [hadoop4 hadoop3]
+hadoop3: starting namenode, logging to /home/hadoop/bigdata/hadoop-2.7.2/logs/hadoop-hadoop-namenode-hadoop3.out
+hadoop4: starting namenode, logging to /home/hadoop/bigdata/hadoop-2.7.2/logs/hadoop-hadoop-namenode-hadoop4.out
+hadoop1: starting datanode, logging to /home/hadoop/bigdata/hadoop-2.7.2/logs/hadoop-hadoop-datanode-hadoop1.out
+hadoop3: starting datanode, logging to /home/hadoop/bigdata/hadoop-2.7.2/logs/hadoop-hadoop-datanode-hadoop3.out
+hadoop4: starting datanode, logging to /home/hadoop/bigdata/hadoop-2.7.2/logs/hadoop-hadoop-datanode-hadoop4.out
+hadoop6: starting datanode, logging to /home/hadoop/bigdata/hadoop-2.7.2/logs/hadoop-hadoop-datanode-hadoop6.out
+hadoop2: starting datanode, logging to /home/hadoop/bigdata/hadoop-2.7.2/logs/hadoop-hadoop-datanode-hadoop2.out
+hadoop5: starting datanode, logging to /home/hadoop/bigdata/hadoop-2.7.2/logs/hadoop-hadoop-datanode-hadoop5.out
+hadoop7: starting datanode, logging to /home/hadoop/bigdata/hadoop-2.7.2/logs/hadoop-hadoop-datanode-hadoop7.out
+Starting journal nodes [hadoop1 hadoop2 hadoop5 hadoop6]
+hadoop1: starting journalnode, logging to /home/hadoop/bigdata/hadoop-2.7.2/logs/hadoop-hadoop-journalnode-hadoop1.out
+hadoop2: starting journalnode, logging to /home/hadoop/bigdata/hadoop-2.7.2/logs/hadoop-hadoop-journalnode-hadoop2.out
+hadoop6: starting journalnode, logging to /home/hadoop/bigdata/hadoop-2.7.2/logs/hadoop-hadoop-journalnode-hadoop6.out
+hadoop5: starting journalnode, logging to /home/hadoop/bigdata/hadoop-2.7.2/logs/hadoop-hadoop-journalnode-hadoop5.out
+Starting ZK Failover Controllers on NN hosts [hadoop4 hadoop3]
+hadoop3: starting zkfc, logging to /home/hadoop/bigdata/hadoop-2.7.2/logs/hadoop-hadoop-zkfc-hadoop3.out
+hadoop4: starting zkfc, logging to /home/hadoop/bigdata/hadoop-2.7.2/logs/hadoop-hadoop-zkfc-hadoop4.out
+
+hadoop@hadoop3:~/bigdata/hadoop-2.7.2$ sbin/start-yarn.sh
+
+starting yarn daemons
+starting resourcemanager, logging to /home/hadoop/bigdata/hadoop-2.7.2/logs/yarn-hadoop-resourcemanager-hadoop3.out
+hadoop1: starting nodemanager, logging to /home/hadoop/bigdata/hadoop-2.7.2/logs/yarn-hadoop-nodemanager-hadoop1.out
+hadoop3: starting nodemanager, logging to /home/hadoop/bigdata/hadoop-2.7.2/logs/yarn-hadoop-nodemanager-hadoop3.out
+hadoop2: starting nodemanager, logging to /home/hadoop/bigdata/hadoop-2.7.2/logs/yarn-hadoop-nodemanager-hadoop2.out
+hadoop4: starting nodemanager, logging to /home/hadoop/bigdata/hadoop-2.7.2/logs/yarn-hadoop-nodemanager-hadoop4.out
+hadoop5: starting nodemanager, logging to /home/hadoop/bigdata/hadoop-2.7.2/logs/yarn-hadoop-nodemanager-hadoop5.out
+hadoop6: starting nodemanager, logging to /home/hadoop/bigdata/hadoop-2.7.2/logs/yarn-hadoop-nodemanager-hadoop6.out
+hadoop7: starting nodemanager, logging to /home/hadoop/bigdata/hadoop-2.7.2/logs/yarn-hadoop-nodemanager-hadoop7.out
+
+hadoop@hadoop9:~/bigdata/hbase-1.1.5$ bin/start-hbase.sh
+
+hadoop1: starting regionserver, logging to /home/hadoop/bigdata/hbase-1.1.5/bin/../logs/hbase-hadoop-regionserver-hadoop1.out
+hadoop4: starting regionserver, logging to /home/hadoop/bigdata/hbase-1.1.5/bin/../logs/hbase-hadoop-regionserver-hadoop4.out
+hadoop5: starting regionserver, logging to /home/hadoop/bigdata/hbase-1.1.5/bin/../logs/hbase-hadoop-regionserver-hadoop5.out
+hadoop6: starting regionserver, logging to /home/hadoop/bigdata/hbase-1.1.5/bin/../logs/hbase-hadoop-regionserver-hadoop6.out
+hadoop7: starting regionserver, logging to /home/hadoop/bigdata/hbase-1.1.5/bin/../logs/hbase-hadoop-regionserver-hadoop7.out
+hadoop3: starting regionserver, logging to /home/hadoop/bigdata/hbase-1.1.5/bin/../logs/hbase-hadoop-regionserver-hadoop3.out
+hadoop2: starting regionserver, logging to /home/hadoop/bigdata/hbase-1.1.5/bin/../logs/hbase-hadoop-regionserver-hadoop2.out
+
+
+
+
+

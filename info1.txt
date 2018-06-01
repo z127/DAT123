@@ -1,0 +1,24 @@
+nohup java -jar XXX.jar &
+ִ?м?Ⱥ?ϵ?jar
+
+hadoop/bin:hadoop dfs -mkdir /xxx
+hadoop/bin:hadoop dfs -put /xxx/xxx* /xxx/xxx
+
+bin/hbase oase.mapreduce.ImportTsv -Dimporttsv.separator="#" -Dimporttsv.columns=HBASE_ROW_KEY,value:data wxq /user/hadoop/testinput
+??????hbase
+
+scan 'statistable',{LIMIT=>1}
+
+ganymed-ssh2-build210.jar
+
+histtable	0	'histtable', {NAME => 'value'}
+statistable	0	'statistable', {NAME => 'statistic'}
+
+
+
+create 'testtable', { NAME => 'colfam1',COMPRESSION => 'GZ'}
+
+
+nohup bin/hbase org.apache.hadoop.hbase.mapreduce.ImportTsv -Dimporttsv.separator="#" -Dimporttsv.columns=HBASE_ROW_KEY,value:data histtable hdfs://hadoopCluster/hist/histPath* &
+
+nohup bin/hbase org.apache.hadoop.hbase.mapreduce.ImportTsv -Dimporttsv.separator="#" -Dimporttsv.columns=HBASE_ROW_KEY,statistic:max,statistic:min,statistic:avg statistable hdfs://hadoopCluster/statis/statisPath* &
